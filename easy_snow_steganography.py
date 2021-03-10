@@ -49,12 +49,12 @@ while True:
     elif choice == "2":
         input_file = input("Path to your text file: ")
         compressed = input("Is the secret message compressed? (y/n) ")
-        if compressed == "y" or compression == "Y":
+        if compressed == "y" or compressed == "Y":
             subprocess.run("stegsnow -C " + input_file, shell=True)
             input()
             
         else:
-            subprocess.run("stegsnow" + input_file, shell=True)
+            subprocess.run("stegsnow " + input_file, shell=True)
             input()
     elif choice == "3":
         print("\n#############################################")
