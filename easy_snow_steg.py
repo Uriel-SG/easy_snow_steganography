@@ -3,7 +3,7 @@ import subprocess
 import time
 
 def operation():  
-    time.sleep(1.5)
+    time.sleep(1.2)
     while True:
         time.sleep(1)
         print("\nChoose an option: ")
@@ -13,7 +13,7 @@ def operation():
         print("2) Retrieve;")
         time.sleep(0.1)
         print("3) Exit;\n")
-        choice = input()
+        choice = input(">> ")
         if choice == "1":
             file1 = open("secret.txt", "w")
             file2 = open("infile.txt", "w")
@@ -51,12 +51,11 @@ def operation():
         elif choice == "3":
             print("\n#############################################")
             print("\nBye bye!")
-            time.sleep(1)
+            time.sleep(0.7)
             print("\nSee you next time!")
-            time.sleep(1)
+            time.sleep(0.7)
             print("\n     Uriel-SG\n")
-            print("#############################################")
-            input()
+            print("#############################################\n")
             exit()
 
 print('''\n############ Welcome to the ############
