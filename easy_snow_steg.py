@@ -18,11 +18,11 @@ def operation():
             file1 = open("secret.txt", "w")
             file2 = open("infile.txt", "w")
 
-            content1 = str(input("\nWrite the message you want to hide here:\n"))
+            content1 = str(input("\nWrite the message you want to hide here:\n>> "))
             file1.write(content1)
             file1.close()
 
-            content2 = str(input("\nWrite the message in which you want to hide your secret:\n"))
+            content2 = str(input("\nWrite the message in which you want to hide your secret:\n>> "))
             file2.write(content2)
             file2.close()
 
@@ -53,13 +53,13 @@ def operation():
             print("\nBye bye!")
             time.sleep(1)
             print("\nSee you next time!")
-            time.sleep(1.4)
+            time.sleep(1)
             print("\n     Uriel-SG\n")
             print("#############################################")
             input()
             exit()
 
-print("\n############ Welcome to the 'Easy-Snow-Steganography'! ############")
+print("\n############ Welcome to the 'Easy-Snow-Steg'! ############")
 time.sleep(1)
 
 while True: 
