@@ -68,7 +68,7 @@ print('''\n############ Welcome to the ############
 time.sleep(1)
 
 while True: 
-    print("\nChoose your OS:")
+    print("\nChoose your OS:\n>> ")
     time.sleep(0.8)
     print("\n1) Linux;\n2) macOS\n")
     chooseos = str(input())
